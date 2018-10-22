@@ -20,6 +20,7 @@ public class TestController {
         for(int i=0;i<10000;i++){
             a=(int)(Math.random()*1000);
             testService.add(a);
+            System.out.println(i);
         }
         return 0;
     }
