@@ -1,12 +1,12 @@
 package com.zwx.demo.test.entity;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 public class Test {
     private Integer id;
-
     private String name;
-
     private Byte sex;
-
     private Long money;
 
     public Integer getId() {

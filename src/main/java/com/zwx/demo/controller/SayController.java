@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiOperation;
 public class SayController {
 
     @ResponseBody
-    @RequestMapping(value ="/getusername", method= RequestMethod.GET)
+    @RequestMapping(value ="/getUserName", method= RequestMethod.GET)
     @ApiOperation(value="根据用户编号获取用户姓名", notes="test: 仅1和2有正确返回")
     @ApiImplicitParam(paramType="query", name = "userNumber", value = "用户编号", required = true, dataType = "Integer")
     public String getUserName(@RequestParam Integer userNumber){
@@ -40,7 +40,7 @@ public class SayController {
     }
 
     @ResponseBody
-    @RequestMapping(value = "/updatePassword",method= RequestMethod.POST)
+    @RequestMapping(value = "/updatePassword", method= RequestMethod.GET)
     @ApiOperation(value="修改用户密码", notes="根据用户id修改密码")
     @ApiImplicitParams({
             @ApiImplicitParam(paramType="query", name = "userId", value = "用户ID", required = true, dataType = "Integer"),
@@ -61,3 +61,4 @@ public class SayController {
         return "密码修改成功!";
     }
 }
+
